@@ -1,0 +1,121 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    border: solid black 2px;
+}
+.divBody
+{
+    background-color: papayawhip;
+}
+header
+{
+    order: 0;
+    background-color: rgb(221, 255, 213);
+    display: flex;
+    justify-content: center;
+}
+header h1
+{
+    margin: 0px;
+    font-size: 50px;
+}
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: stretch;
+}
+nav ul li
+{
+    border: solid black 5px;
+    list-style: none;
+    flex-grow: 1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: stretch;
+}
+nav ul li a
+{
+    border: solid black 2px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.contenidoGral
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.contenidoGral .articulos
+{
+    margin: 0;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+}
+#art1
+{
+    background-color: white;
+    border: solid black 2px;
+    height: 200px;
+}
+#art1 p
+{
+    margin: 0;
+}
+
+#art2
+{
+    background-color: black;
+    color: white;
+    border: solid black 2px;
+    height: 200px;
+}
+#art2 p
+{
+    margin: 0;
+}
+
+aside
+{
+    flex-grow: 0.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 12%;
+}
+aside ul
+{
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+aside ul li
+{
+    list-style: none;
+}
+
+footer
+{
+    background-color: rgb(221, 255, 213);
+    margin: 0;
+    border-top: solid black 2px;
+}
