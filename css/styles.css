@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   border: solid black 2px;
+  margin: 0;
 }
 .divBody {
   background-color: papayawhip;
@@ -34,9 +35,25 @@ nav ul li {
   justify-items: stretch;
 }
 nav ul li a {
-  border: solid black 2px;
   margin: 20px;
   font-size: 20px;
+  background-color: black;
+  color: white;
+}
+#opc1 {
+  background-image: url("https://images.pexels.com/photos/5709009/pexels-photo-5709009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#opc2 {
+  background-image: url("https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#opc3 {
+  background-image: url("https://images.pexels.com/photos/2441454/pexels-photo-2441454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contenidoGral {
@@ -130,12 +147,15 @@ nav ul li a {
 }
 
 aside {
+  background-image: url("https://images.pexels.com/photos/1828875/pexels-photo-1828875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   flex-grow: 0.2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  margin-bottom: 12%;
 }
 aside ul {
   flex-grow: 1;
@@ -145,9 +165,14 @@ aside ul {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: stretch;
+  margin-bottom: 200%;
 }
 aside ul li {
   list-style: none;
+}
+aside ul li a {
+  background-color: black;
+  color: white;
 }
 
 footer {
