@@ -5,8 +5,8 @@ jobs:
     name: deploy to cluster
     runs-on: ubuntu-lastest
     steps:
-      uses: actions/checkout@master
-      name: build and push to docker
+    - uses: actions/checkout@master
+    - name: build and push to docker
       uses: docker/build-push-action@v1
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
