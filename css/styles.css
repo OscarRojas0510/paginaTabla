@@ -58,7 +58,11 @@ nav ul li a {
   align-items: stretch;
 }
 #art1 {
-  background-color: white;
+  background-image: url("https://images.pexels.com/photos/531972/pexels-photo-531972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
   border: solid black 2px;
   display: flex;
   height: 300px;
