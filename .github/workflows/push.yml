@@ -1,17 +1,14 @@
-on: push
-name: deploy
+name: pruebaWfs
+
+on:
+  push:
+    branches:
+      - master
+
 jobs:
-  deploy:
-    name: deploy to cluster
-    runs-on: ubuntu-lastest
+  trabajo1:
+    runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@master
-    - name: build and push to docker
-      uses: docker/build-push-action@v1
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: ${{ github.repository }}
-        tag_with_ref: true
-        tag_with_sha: true
-        tags: ${{ github.sha }}
+      - name: Echo del mensaje
+        run: echo "Hola"
+        
