@@ -12,9 +12,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - uses: logikal-io/install-chrome@v1
-        with:
-          version: 109.0.5414.119
       - name: Installdependences
         run: npm install
       - name: Lint
