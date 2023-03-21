@@ -60,9 +60,15 @@ nav ul li a {
 #art1 {
   background-color: white;
   border: solid black 2px;
-  height: 200px;
   display: flex;
+  height: 300px;
   flex-direction: column;
+}
+#vacio {
+  flex-basis: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .tabla1 {
   margin: 0;
@@ -71,7 +77,6 @@ nav ul li a {
 }
 .fila1 {
   margin: 0;
-  border: solid blue 2px;
   flex-grow: 0.2;
   display: flex;
   justify-content: space-between;
@@ -79,37 +84,40 @@ nav ul li a {
   align-content: stretch;
   font-size: small;
 }
-.fila1 h2 {
+#noFila {
   margin: 0;
+  font-size: small;
 }
 .fila2 {
   margin: 0;
-  border: solid blue 2px;
   flex-grow: 10;
   display: flex;
   justify-content: space-between;
 }
-.elemento
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid black 2px;
-    border-radius: 7px;
-    padding: 10px;
+.fila3 {
+  margin: 0;
+  flex-grow: 10;
+  display: flex;
+  justify-content: center;
 }
-.elemento h2, .elemento p{
-    margin: 0;
+.elemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid black 2px;
+  border-radius: 7px;
+  flex-basis: 200px;
 }
-#H
-{
-    background-color: white; 
+.elemento h2,
+.elemento p {
+  margin: 0;
 }
-#He
-{
-    background-color: rgb(139, 114, 190); 
+#H {
+  background-color: white;
 }
-
+#He {
+  background-color: rgb(139, 114, 190);
+}
 
 #art2 {
   background-color: black;
