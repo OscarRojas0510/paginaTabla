@@ -6,9 +6,21 @@ on:
       - master
 
 jobs:
-  trabajo1:
+  deploy:
     runs-on: ubuntu-18.04
     steps:
-      - name: Echo del mensaje
-        run: echo "Hola"
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: logikal-io/install-chrome@v1
+        with:
+          version: 113.0.5653.0
+      - name: Installdependences
+        run: npm install
+      - name: Lint
+        run: npm run eslint
+    
+
+
+
         
