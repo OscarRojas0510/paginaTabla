@@ -6,6 +6,8 @@ body {
 }
 .divBody {
   background-color: papayawhip;
+  display: flex;
+  flex-direction: column;
 }
 header {
   order: 0;
@@ -75,23 +77,22 @@ nav ul li a {
   align-items: stretch;
 }
 #art1 {
-  background-image: url("https://images.pexels.com/photos/531972/pexels-photo-531972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: top;
   border: solid black 2px;
   display: flex;
-  height: 300px;
+  height: fit-content;
+  padding: 15px;
   flex-direction: column;
-  
 }
 #vacio {
-  flex-basis: 200px;
+  flex-basis: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  
 }
 .tabla1 {
   margin: 0;
@@ -112,7 +113,11 @@ nav ul li a {
 }
 #noFila {
   margin: 0;
-  font-size: small;
+  font-size: xx-small;
+  padding: 0;
+  background-color: black;
+  color: white;
+
 }
 .fila2 {
   margin: 0;
@@ -128,8 +133,12 @@ nav ul li a {
   align-items: center;
   border: solid black 2px;
   border-radius: 7px;
-  flex-basis: 200px;
+  flex-basis: 100%;
 }
+.elemento h2, .elemento p {
+  font-size: x-small;
+}
+
 .elemento h2,
 .elemento p {
   margin: 0;
@@ -137,35 +146,50 @@ nav ul li a {
 #H {
   background-color: white;
 }
-#He, #Ne, #Ar
+#He, #Ne, #Ar,#Kr,#Xe,#Rn
 {
   background-color: rgb(139, 114, 190);
 }
-#Li, #Na
+#Li, #Na, #K,#Rb,#Cs,#Fr
 {
-    background-color: salmon;
+    background-color: rgb(243,154,124);
 }
-#Be, #Mg
+#Be, #Mg,#Ca, #Sr, #Ba, #Ra
 {
-    background-color: rgb(255, 172, 136);
+    background-color: rgb(246, 178, 131);
 }
-#B, #Si
+#Sc,#Ti,#V,#Cr,#Mn,#Fe,#Co,#Ni,#Cu,#Zn,#Y,#Zr,#Nb,#Mo,#Tc,#Ru,#Rh,#Pd,#Ag,#Cd,#Hf,#Ta,#W,#Re,#Os,#Ir,#Pt,#Au,#Hg,#Rf,#Db,#Sg,#Bh,#Hs
 {
-    background-color: rgb(123, 182, 97);
+  background-color: rgb(253,203,142);
 }
-#C , #N, #O, #P, #S
+#B, #Si,#Ge,#As,#Sb,#Te
 {
-    background-color: cadetblue;
+    background-color: rgb(176,211,155);
 }
-#F, #Cl
+#C , #N, #O, #P, #S,#Se
 {
-    background-color: aqua;
+    background-color: rgb(138,204,202);
 }
-#Al
+#F, #Cl,#Br,#I,#At
 {
-    background-color: yellow;
+    background-color: rgb(132,208,244);
 }
-
+#Al,#Ga,#In,#Sn,#Tl,#Pb,#Bi,#Po
+{
+    background-color: rgb(255,246,155);
+}
+#lanthanoids
+{
+  background-color: rgb(199,147,195);
+}
+#actinoids
+{
+  background-color: rgb(243,156,162);
+}
+#Mt, #Ds, #Rg, #Cn, #Nh, #Fl, #Mc, #Lv, #Ts, #Og
+{
+  background-color: rgb(191,191,191);
+}
 #art2 {
   background-color: black;
   color: white;
