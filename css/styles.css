@@ -109,7 +109,6 @@ nav ul li a {
   align-items: stretch;
   align-content: stretch;
   font-size: small;
-  
 }
 #noFila {
   margin: 0;
@@ -117,7 +116,6 @@ nav ul li a {
   padding: 0;
   background-color: black;
   color: white;
-
 }
 .fila2 {
   margin: 0;
@@ -125,7 +123,6 @@ nav ul li a {
   gap: 3px;
   display: flex;
   justify-content: center;
-  
 }
 .elemento {
   display: flex;
@@ -134,8 +131,19 @@ nav ul li a {
   border: solid black 2px;
   border-radius: 7px;
   flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 2px;
 }
-.elemento h2, .elemento p {
+#numeracion {
+  align-self: flex-end;
+  font-size: xx-small;
+  margin: 0;
+  padding: 0;
+}
+.elemento h2,
+.elemento p {
   font-size: x-small;
 }
 
@@ -146,49 +154,116 @@ nav ul li a {
 #H {
   background-color: white;
 }
-#He, #Ne, #Ar,#Kr,#Xe,#Rn
-{
+#He,
+#Ne,
+#Ar,
+#Kr,
+#Xe,
+#Rn {
   background-color: rgb(139, 114, 190);
 }
-#Li, #Na, #K,#Rb,#Cs,#Fr
-{
-    background-color: rgb(243,154,124);
+#Li,
+#Na,
+#K,
+#Rb,
+#Cs,
+#Fr {
+  background-color: rgb(243, 154, 124);
 }
-#Be, #Mg,#Ca, #Sr, #Ba, #Ra
-{
-    background-color: rgb(246, 178, 131);
+#Be,
+#Mg,
+#Ca,
+#Sr,
+#Ba,
+#Ra {
+  background-color: rgb(246, 178, 131);
 }
-#Sc,#Ti,#V,#Cr,#Mn,#Fe,#Co,#Ni,#Cu,#Zn,#Y,#Zr,#Nb,#Mo,#Tc,#Ru,#Rh,#Pd,#Ag,#Cd,#Hf,#Ta,#W,#Re,#Os,#Ir,#Pt,#Au,#Hg,#Rf,#Db,#Sg,#Bh,#Hs
-{
-  background-color: rgb(253,203,142);
+#Sc,
+#Ti,
+#V,
+#Cr,
+#Mn,
+#Fe,
+#Co,
+#Ni,
+#Cu,
+#Zn,
+#Y,
+#Zr,
+#Nb,
+#Mo,
+#Tc,
+#Ru,
+#Rh,
+#Pd,
+#Ag,
+#Cd,
+#Hf,
+#Ta,
+#W,
+#Re,
+#Os,
+#Ir,
+#Pt,
+#Au,
+#Hg,
+#Rf,
+#Db,
+#Sg,
+#Bh,
+#Hs {
+  background-color: rgb(253, 203, 142);
 }
-#B, #Si,#Ge,#As,#Sb,#Te
-{
-    background-color: rgb(176,211,155);
+#B,
+#Si,
+#Ge,
+#As,
+#Sb,
+#Te {
+  background-color: rgb(176, 211, 155);
 }
-#C , #N, #O, #P, #S,#Se
-{
-    background-color: rgb(138,204,202);
+#C,
+#N,
+#O,
+#P,
+#S,
+#Se {
+  background-color: rgb(138, 204, 202);
 }
-#F, #Cl,#Br,#I,#At
-{
-    background-color: rgb(132,208,244);
+#F,
+#Cl,
+#Br,
+#I,
+#At {
+  background-color: rgb(132, 208, 244);
 }
-#Al,#Ga,#In,#Sn,#Tl,#Pb,#Bi,#Po
-{
-    background-color: rgb(255,246,155);
+#Al,
+#Ga,
+#In,
+#Sn,
+#Tl,
+#Pb,
+#Bi,
+#Po {
+  background-color: rgb(255, 246, 155);
 }
-#lanthanoids
-{
-  background-color: rgb(199,147,195);
+#lanthanoids {
+  background-color: rgb(199, 147, 195);
 }
-#actinoids
-{
-  background-color: rgb(243,156,162);
+#actinoids {
+  background-color: rgb(243, 156, 162);
 }
-#Mt, #Ds, #Rg, #Cn, #Nh, #Fl, #Mc, #Lv, #Ts, #Og
-{
-  background-color: rgb(191,191,191);
+#Mt,
+#Ds,
+#Rg,
+#Cn,
+#Nh,
+#Fl,
+#Mc,
+#Lv,
+#Ts,
+#Og {
+  background-color: rgb(191, 191, 191);
 }
 #art2 {
   background-color: black;
