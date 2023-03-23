@@ -135,6 +135,10 @@ nav ul li a {
   border-radius: 7px;
   flex-basis: 100%;
 }
+.elemento:hover{
+  font-size: larger;
+  size: 200%;
+}
 .elemento h2, .elemento p {
   font-size: x-small;
 }
