@@ -93,6 +93,8 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  padding: 3px;
+  border: solid white 1px;
 }
 .tabla1 {
   margin: 0;
@@ -134,7 +136,9 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 15px;
 }
 #numeracion {
   align-self: flex-end;
@@ -142,13 +146,16 @@ nav ul li a {
   margin: 0;
   padding: 0;
 }
+#datosel
+{
+  font-size: xx-small;
+  margin: 0;
+  padding: 0;
+}
 .elemento h2,
 .elemento p {
   font-size: x-small;
-}
-
-.elemento h2,
-.elemento p {
+  white-space: nowrap;
   margin: 0;
 }
 #H {
