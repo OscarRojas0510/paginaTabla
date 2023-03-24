@@ -136,8 +136,7 @@ nav ul li a {
   flex-basis: 100%;
 }
 .elemento:hover{
-  font-size: larger;
-  size: 200%;
+  border: solid white 5px;
 }
 .elemento h2, .elemento p {
   font-size: x-small;
@@ -147,6 +146,11 @@ nav ul li a {
 .elemento p {
   margin: 0;
 }
+.elemento:hover h2,
+.elemento:hover p {
+  font-size: medium;
+}
+
 #H {
   background-color: white;
 }
@@ -194,6 +198,7 @@ nav ul li a {
 {
   background-color: rgb(191,191,191);
 }
+
 #art2 {
   background-color: black;
   color: white;
