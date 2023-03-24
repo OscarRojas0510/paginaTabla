@@ -3,21 +3,33 @@ body {
   flex-direction: column;
   border: solid black 2px;
   margin: 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  max-width: 100vw;
+  flex-wrap: nowrap;
 }
 .divBody {
   background-color: papayawhip;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
 }
 header {
   order: 0;
-  background-color: rgb(221, 255, 213);
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/977/540/non_2x/seamless-pattern-with-chemistry-elements-and-sketches-repetitive-background-with-test-tubes-formulas-elements-and-atoms-science-and-research-wallpaper-vector.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
 }
 header h1 {
   margin: 0px;
   font-size: 50px;
+  background-color: black;
+  color: white;
 }
 nav ul {
   margin: 0;
@@ -35,6 +47,7 @@ nav ul li {
   display: flex;
   justify-content: center;
   justify-items: stretch;
+  flex-wrap: nowrap;
 }
 nav ul li a {
   margin: 20px;
@@ -46,16 +59,19 @@ nav ul li a {
   background-image: url("https://images.pexels.com/photos/5709009/pexels-photo-5709009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 #opc2 {
   background-image: url("https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 #opc3 {
   background-image: url("https://images.pexels.com/photos/2441454/pexels-photo-2441454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .contenidoGral {
@@ -67,6 +83,7 @@ nav ul li a {
   margin-top: 15px;
   margin-left: 5px;
   margin-bottom: 5px;
+  flex-wrap: nowrap;
 }
 .contenidoGral .articulos {
   margin: 0;
@@ -75,6 +92,8 @@ nav ul li a {
   flex-direction: column;
   gap: 10px;
   align-items: stretch;
+  flex-wrap: nowrap;
+  max-width: 90%;
 }
 #art1 {
   background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -84,18 +103,18 @@ nav ul li a {
   background-position-y: top;
   border: solid black 2px;
   display: flex;
-  height: fit-content;
   padding: 15px;
   flex-direction: column;
+  background-attachment: fixed;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 50vh;
 }
-#vacio {
-  flex-basis: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
+
 .tabla1 {
   margin: 0;
+  flex:none;
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -109,7 +128,6 @@ nav ul li a {
   align-items: stretch;
   align-content: stretch;
   font-size: small;
-  
 }
 #noFila {
   margin: 0;
@@ -117,7 +135,12 @@ nav ul li a {
   padding: 0;
   background-color: black;
   color: white;
-
+}
+#vacio {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .fila2 {
   margin: 0;
@@ -125,9 +148,12 @@ nav ul li a {
   gap: 3px;
   display: flex;
   justify-content: center;
-  
 }
 .elemento {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,10 +161,12 @@ nav ul li a {
   border-radius: 7px;
   flex-basis: 100%;
 }
-.elemento:hover{
+.elemento:hover {
   border: solid white 5px;
+  cursor: pointer;
 }
-.elemento h2, .elemento p {
+.elemento h2,
+.elemento p {
   font-size: x-small;
 }
 
@@ -154,49 +182,116 @@ nav ul li a {
 #H {
   background-color: white;
 }
-#He, #Ne, #Ar,#Kr,#Xe,#Rn
-{
-  background-color: rgb(139, 114, 190);
+#He,
+#Ne,
+#Ar,
+#Kr,
+#Xe,
+#Rn {
+  background-color: rgba(139, 114, 190);
 }
-#Li, #Na, #K,#Rb,#Cs,#Fr
-{
-    background-color: rgb(243,154,124);
+#Li,
+#Na,
+#K,
+#Rb,
+#Cs,
+#Fr {
+  background-color: rgb(243, 154, 124);
 }
-#Be, #Mg,#Ca, #Sr, #Ba, #Ra
-{
-    background-color: rgb(246, 178, 131);
+#Be,
+#Mg,
+#Ca,
+#Sr,
+#Ba,
+#Ra {
+  background-color: rgb(246, 178, 131);
 }
-#Sc,#Ti,#V,#Cr,#Mn,#Fe,#Co,#Ni,#Cu,#Zn,#Y,#Zr,#Nb,#Mo,#Tc,#Ru,#Rh,#Pd,#Ag,#Cd,#Hf,#Ta,#W,#Re,#Os,#Ir,#Pt,#Au,#Hg,#Rf,#Db,#Sg,#Bh,#Hs
-{
-  background-color: rgb(253,203,142);
+#Sc,
+#Ti,
+#V,
+#Cr,
+#Mn,
+#Fe,
+#Co,
+#Ni,
+#Cu,
+#Zn,
+#Y,
+#Zr,
+#Nb,
+#Mo,
+#Tc,
+#Ru,
+#Rh,
+#Pd,
+#Ag,
+#Cd,
+#Hf,
+#Ta,
+#W,
+#Re,
+#Os,
+#Ir,
+#Pt,
+#Au,
+#Hg,
+#Rf,
+#Db,
+#Sg,
+#Bh,
+#Hs {
+  background-color: rgb(253, 203, 142);
 }
-#B, #Si,#Ge,#As,#Sb,#Te
-{
-    background-color: rgb(176,211,155);
+#B,
+#Si,
+#Ge,
+#As,
+#Sb,
+#Te {
+  background-color: rgb(176, 211, 155);
 }
-#C , #N, #O, #P, #S,#Se
-{
-    background-color: rgb(138,204,202);
+#C,
+#N,
+#O,
+#P,
+#S,
+#Se {
+  background-color: rgb(138, 204, 202);
 }
-#F, #Cl,#Br,#I,#At
-{
-    background-color: rgb(132,208,244);
+#F,
+#Cl,
+#Br,
+#I,
+#At {
+  background-color: rgb(132, 208, 244);
 }
-#Al,#Ga,#In,#Sn,#Tl,#Pb,#Bi,#Po
-{
-    background-color: rgb(255,246,155);
+#Al,
+#Ga,
+#In,
+#Sn,
+#Tl,
+#Pb,
+#Bi,
+#Po {
+  background-color: rgb(255, 246, 155);
 }
-#lanthanoids
-{
-  background-color: rgb(199,147,195);
+#lanthanoids {
+  background-color: rgb(199, 147, 195);
 }
-#actinoids
-{
-  background-color: rgb(243,156,162);
+#actinoids {
+  background-color: rgb(243, 156, 162);
 }
-#Mt, #Ds, #Rg, #Cn, #Nh, #Fl, #Mc, #Lv, #Ts, #Og
-{
-  background-color: rgb(191,191,191);
+#Mt,
+#Ds,
+#Rg,
+#Cn,
+#Nh,
+#Fl,
+#Mc,
+#Lv,
+#Ts,
+#Og {
+  background-color: rgb(191, 191, 191);
 }
 
 #art2 {
@@ -204,8 +299,9 @@ nav ul li a {
   color: white;
   border: solid black 2px;
   height: 200px;
+  overflow: auto;
 }
-#art2 p {
+#art2 pre {
   margin: 0;
 }
 
