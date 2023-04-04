@@ -1,3 +1,16 @@
+:root
+{
+  --colorarts1: rgb(60, 0, 0);
+}
+
+*
+{
+  box-sizing: border-box;
+}
+html
+{
+  background-color: black;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -6,28 +19,24 @@ body {
   position: relative;
   left: 0;
   right: 0;
-  max-width: 100vw;
+  min-width: 100vw;
   flex-wrap: nowrap;
 }
 .divBody {
-  background-color: papayawhip;
+  background-color: black;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
 }
 header {
   order: 0;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/001/977/540/non_2x/seamless-pattern-with-chemistry-elements-and-sketches-repetitive-background-with-test-tubes-formulas-elements-and-atoms-science-and-research-wallpaper-vector.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
+  top: 0;
 }
 header h1 {
   margin: 0px;
-  font-size: 50px;
+  font-size: 15px;
   background-color: black;
   color: white;
 }
@@ -38,6 +47,8 @@ nav ul {
   flex-direction: row;
   justify-content: space-between;
   justify-items: stretch;
+  background-color: black;
+  padding: 5px;
 }
 nav ul li {
   border: solid black 5px;
@@ -48,30 +59,36 @@ nav ul li {
   justify-content: center;
   justify-items: stretch;
   flex-wrap: nowrap;
+  border-radius: 15px;
+  position: relative;
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-nav ul li a {
-  margin: 20px;
-  font-size: 20px;
+nav ul li a{
+  margin: 0;
+  font-size: 15px;
   background-color: black;
   color: white;
 }
 #opc1 {
-  background-image: url("https://images.pexels.com/photos/5709009/pexels-photo-5709009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-repeat: no-repeat;
+  background-image: url("https://sciencenotes.org/wp-content/uploads/2017/04/ColorGlowTubePeriodicTable.png");
   background-size: cover;
-  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
 }
 #opc2 {
   background-image: url("https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 #opc3 {
   background-image: url("https://images.pexels.com/photos/2441454/pexels-photo-2441454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .contenidoGral {
@@ -96,11 +113,7 @@ nav ul li a {
   max-width: 90%;
 }
 #art1 {
-  background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: top;
+  background-color: var(--colorarts1);
   border: solid black 2px;
   display: flex;
   padding: 15px;
@@ -110,6 +123,7 @@ nav ul li a {
   overflow-x: auto;
   overflow-y: auto;
   height: 50vh;
+  border-radius: 20px;
 }
 
 .tabla1 {
@@ -133,7 +147,7 @@ nav ul li a {
   margin: 0;
   font-size: xx-small;
   padding: 0;
-  background-color: black;
+  background-color: var(--colorarts1);
   color: white;
 }
 #vacio {
@@ -162,7 +176,6 @@ nav ul li a {
   flex-basis: 100%;
 }
 .elemento:hover {
-  border: solid white 5px;
   cursor: pointer;
 }
 .elemento h2,
@@ -180,7 +193,8 @@ nav ul li a {
 }
 
 #H {
-  background-color: white;
+  border: solid white 2px;
+  color: white;
 }
 #He,
 #Ne,
@@ -188,7 +202,8 @@ nav ul li a {
 #Kr,
 #Xe,
 #Rn {
-  background-color: rgba(139, 114, 190);
+  border: solid rgba(139, 114, 190) 2px;
+  color: rgba(139, 114, 190);
 }
 #Li,
 #Na,
@@ -196,7 +211,8 @@ nav ul li a {
 #Rb,
 #Cs,
 #Fr {
-  background-color: rgb(243, 154, 124);
+  border: solid rgba(243, 154, 124) 2px;
+  color: rgba(243, 154, 124);
 }
 #Be,
 #Mg,
@@ -204,7 +220,8 @@ nav ul li a {
 #Sr,
 #Ba,
 #Ra {
-  background-color: rgb(246, 178, 131);
+  border: solid rgba(246, 178, 131) 2px;
+  color: rgba(246, 178, 131);
 }
 #Sc,
 #Ti,
@@ -240,7 +257,8 @@ nav ul li a {
 #Sg,
 #Bh,
 #Hs {
-  background-color: rgb(253, 203, 142);
+  border: solid rgba(253, 203, 142) 2px;
+  color: rgba(253, 203, 142);
 }
 #B,
 #Si,
@@ -248,7 +266,8 @@ nav ul li a {
 #As,
 #Sb,
 #Te {
-  background-color: rgb(176, 211, 155);
+  border: solid rgba(176, 211, 155) 2px;
+  color: rgba(176, 211, 155);
 }
 #C,
 #N,
@@ -256,14 +275,16 @@ nav ul li a {
 #P,
 #S,
 #Se {
-  background-color: rgb(138, 204, 202);
+  border: solid rgba(138, 204, 202) 2px;
+  color: rgba(138, 204, 202);
 }
 #F,
 #Cl,
 #Br,
 #I,
 #At {
-  background-color: rgb(132, 208, 244);
+  border: solid rgba(132, 208, 244) 2px;
+  color: rgba(132, 208, 244);
 }
 #Al,
 #Ga,
@@ -273,13 +294,16 @@ nav ul li a {
 #Pb,
 #Bi,
 #Po {
-  background-color: rgb(255, 246, 155);
+  border: solid rgba(255, 246, 155) 2px;
+  color: rgba(255, 246, 155);
 }
 #lanthanoids {
-  background-color: rgb(199, 147, 195);
+  border: solid rgba(199, 147, 195) 2px;
+  color: rgba(199, 147, 195);
 }
 #actinoids {
-  background-color: rgb(243, 156, 162);
+  border: solid rgba(243, 156, 162) 2px;
+  color: rgba(243, 156, 162);
 }
 #Mt,
 #Ds,
@@ -291,11 +315,12 @@ nav ul li a {
 #Lv,
 #Ts,
 #Og {
-  background-color: rgb(191, 191, 191);
+  border: solid rgba(191, 191, 191) 2px;
+  color: rgba(191, 191, 191);
 }
 
 #art2 {
-  background-color: black;
+  background-color: var(--colorarts1);  
   color: white;
   border: solid black 2px;
   height: 200px;
@@ -315,6 +340,7 @@ aside {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  border-radius: 20px;
 }
 aside ul {
   flex-grow: 1;
@@ -335,7 +361,8 @@ aside ul li a {
 }
 
 footer {
-  background-color: rgb(221, 255, 213);
+  background-color: var(--colorarts1);
+  color: white;
   margin: 0;
   border-top: solid black 2px;
 }
