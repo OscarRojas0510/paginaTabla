@@ -6,6 +6,7 @@
 *
 {
   box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
 }
 html
 {
@@ -125,7 +126,13 @@ nav ul li a{
   height: 50vh;
   border-radius: 20px;
 }
-
+#vacio {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 3px;
+}
 .tabla1 {
   margin: 0;
   flex:none;
@@ -150,12 +157,6 @@ nav ul li a{
   background-color: var(--colorarts1);
   color: white;
 }
-#vacio {
-  flex-basis: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
 .fila2 {
   margin: 0;
   flex-grow: 10;
@@ -174,148 +175,148 @@ nav ul li a{
   border: solid black 2px;
   border-radius: 7px;
   flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 15px;
+}
+#numeracion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: stretch;
+  font-size: xx-small;
+  margin: 0;
+  padding: 0;
+}
+#numeracion i {
+  color: black;
+  margin: 2px;
+}
+#numeracion i:hover {
+  -webkit-animation-name: fa-bounce;
+  animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+  animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+  animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+  animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(
+    --fa-animation-iteration-count,
+    infinite
+  );
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(
+    --fa-animation-timing,
+    cubic-bezier(0.28, 0.84, 0.42, 1)
+  );
+  animation-timing-function: var(
+    --fa-animation-timing,
+    cubic-bezier(0.28, 0.84, 0.42, 1)
+  );
+  cursor: pointer;
+}
+#datosel {
+  font-size: xx-small;
+  margin: 0;
+  padding: 0;
 }
 .elemento:hover {
-  cursor: pointer;
+  cursor: default;
 }
 .elemento h2,
 .elemento p {
   font-size: x-small;
-}
-
-.elemento h2,
-.elemento p {
+  white-space: nowrap;
   margin: 0;
-}
-.elemento:hover h2,
-.elemento:hover p {
-  font-size: medium;
 }
 
 #H {
   border: solid white 2px;
   color: white;
 }
-#He,
-#Ne,
-#Ar,
-#Kr,
-#Xe,
-#Rn {
-  border: solid rgba(139, 114, 190) 2px;
-  color: rgba(139, 114, 190);
+
+#H i{
+  color: white;
 }
-#Li,
-#Na,
-#K,
-#Rb,
-#Cs,
-#Fr {
+#gasNoble  {
+  border: solid rgba(139, 114, 190) 2px;
+  color: rgb(139, 114, 190);
+}
+#gasNoble i  {
+  color: rgb(139, 114, 190);
+}
+#metalAlcalino {
   border: solid rgba(243, 154, 124) 2px;
   color: rgba(243, 154, 124);
 }
-#Be,
-#Mg,
-#Ca,
-#Sr,
-#Ba,
-#Ra {
+#metalAlcalino i {
+  color: rgba(243, 154, 124);
+}
+#metalAlcalinoterreo {
   border: solid rgba(246, 178, 131) 2px;
   color: rgba(246, 178, 131);
 }
-#Sc,
-#Ti,
-#V,
-#Cr,
-#Mn,
-#Fe,
-#Co,
-#Ni,
-#Cu,
-#Zn,
-#Y,
-#Zr,
-#Nb,
-#Mo,
-#Tc,
-#Ru,
-#Rh,
-#Pd,
-#Ag,
-#Cd,
-#Hf,
-#Ta,
-#W,
-#Re,
-#Os,
-#Ir,
-#Pt,
-#Au,
-#Hg,
-#Rf,
-#Db,
-#Sg,
-#Bh,
-#Hs {
+#metalAlcalinoterreo i{
+  color: rgba(246, 178, 131);
+}
+#metalTransicion {
   border: solid rgba(253, 203, 142) 2px;
   color: rgba(253, 203, 142);
 }
-#B,
-#Si,
-#Ge,
-#As,
-#Sb,
-#Te {
+#metalTransicion i {
+  color: rgba(253, 203, 142);
+}
+#metaloide {
   border: solid rgba(176, 211, 155) 2px;
   color: rgba(176, 211, 155);
 }
-#C,
-#N,
-#O,
-#P,
-#S,
-#Se {
+#metaloide i{
+  color: rgba(176, 211, 155);
+}
+#noMetal {
   border: solid rgba(138, 204, 202) 2px;
   color: rgba(138, 204, 202);
 }
-#F,
-#Cl,
-#Br,
-#I,
-#At {
+#noMetal i{
+  color: rgba(138, 204, 202);
+}
+#halogeno {
   border: solid rgba(132, 208, 244) 2px;
   color: rgba(132, 208, 244);
 }
-#Al,
-#Ga,
-#In,
-#Sn,
-#Tl,
-#Pb,
-#Bi,
-#Po {
+#halogeno i{
+  color: rgba(132, 208, 244);
+}
+#metalPesado {
   border: solid rgba(255, 246, 155) 2px;
+  color: rgba(255, 246, 155);
+}
+#metalPesado i{
   color: rgba(255, 246, 155);
 }
 #lanthanoids {
   border: solid rgba(199, 147, 195) 2px;
   color: rgba(199, 147, 195);
 }
+#lanthanoids i{
+  color: rgba(199, 147, 195);
+}
 #actinoids {
   border: solid rgba(243, 156, 162) 2px;
   color: rgba(243, 156, 162);
 }
-#Mt,
-#Ds,
-#Rg,
-#Cn,
-#Nh,
-#Fl,
-#Mc,
-#Lv,
-#Ts,
-#Og {
+#actinoids i{
+  color: rgba(243, 156, 162);
+}
+#superpesado {
   border: solid rgba(191, 191, 191) 2px;
+  color: rgba(191, 191, 191);
+}
+#superpesado i{
   color: rgba(191, 191, 191);
 }
 
