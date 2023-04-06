@@ -1,2 +1,2 @@
 # paginaTabla
-Practica de css flexbox para hacer una taabla periodica
+Practica de css flexbox para hacer una taabla periodica, yeah
