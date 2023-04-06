@@ -190,97 +190,28 @@ nav ul li a {
 #H {
   background-color: white;
 }
-#He,
-#Ne,
-#Ar,
-#Kr,
-#Xe,
-#Rn {
+#gasNoble {
   background-color: rgb(139, 114, 190);
 }
-#Li,
-#Na,
-#K,
-#Rb,
-#Cs,
-#Fr {
+#metalAlcalino {
   background-color: rgb(243, 154, 124);
 }
-#Be,
-#Mg,
-#Ca,
-#Sr,
-#Ba,
-#Ra {
+#metalAlcalinoterreo {
   background-color: rgb(246, 178, 131);
 }
-#Sc,
-#Ti,
-#V,
-#Cr,
-#Mn,
-#Fe,
-#Co,
-#Ni,
-#Cu,
-#Zn,
-#Y,
-#Zr,
-#Nb,
-#Mo,
-#Tc,
-#Ru,
-#Rh,
-#Pd,
-#Ag,
-#Cd,
-#Hf,
-#Ta,
-#W,
-#Re,
-#Os,
-#Ir,
-#Pt,
-#Au,
-#Hg,
-#Rf,
-#Db,
-#Sg,
-#Bh,
-#Hs {
+#metalTransicion {
   background-color: rgb(253, 203, 142);
 }
-#B,
-#Si,
-#Ge,
-#As,
-#Sb,
-#Te {
+#metaloide {
   background-color: rgb(176, 211, 155);
 }
-#C,
-#N,
-#O,
-#P,
-#S,
-#Se {
+#noMetal {
   background-color: rgb(138, 204, 202);
 }
-#F,
-#Cl,
-#Br,
-#I,
-#At {
+#halogeno {
   background-color: rgb(132, 208, 244);
 }
-#Al,
-#Ga,
-#In,
-#Sn,
-#Tl,
-#Pb,
-#Bi,
-#Po {
+#metalPesado {
   background-color: rgb(255, 246, 155);
 }
 #lanthanoids {
@@ -289,16 +220,7 @@ nav ul li a {
 #actinoids {
   background-color: rgb(243, 156, 162);
 }
-#Mt,
-#Ds,
-#Rg,
-#Cn,
-#Nh,
-#Fl,
-#Mc,
-#Lv,
-#Ts,
-#Og {
+#superpesado {
   background-color: rgb(191, 191, 191);
 }
 #art2 {
