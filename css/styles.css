@@ -1,15 +1,12 @@
-:root
-{
+:root {
   --colorarts1: rgb(60, 0, 0);
 }
 
-*
-{
+* {
   box-sizing: border-box;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
-html
-{
+html {
   background-color: black;
 }
 body {
@@ -66,7 +63,7 @@ nav ul li {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-nav ul li a{
+nav ul li a {
   margin: 0;
   font-size: 15px;
   background-color: black;
@@ -77,7 +74,6 @@ nav ul li a{
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  
 }
 #opc2 {
   background-image: url("https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -135,7 +131,7 @@ nav ul li a{
 }
 .tabla1 {
   margin: 0;
-  flex:none;
+  flex: none;
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -181,7 +177,11 @@ nav ul li a{
   padding-left: 2px;
   padding-right: 2px;
   padding-bottom: 15px;
-  box-shadow: rgba(255,255,255, 0.25) 0px 54px 55px, rgba(255,255,255, 0.12) 0px -12px 30px, rgba(255,255,255, 0.12) 0px 4px 6px, rgba(255,255,255, 0.17) 0px 12px 13px, rgba(255,255,255, 0.09) 0px -3px 5px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
 }
 #numeracion {
   display: flex;
@@ -240,14 +240,30 @@ nav ul li a{
   color: white;
 }
 
-#H i{
+#H i {
   color: white;
 }
-#gasNoble  {
+#gasNoble {
   border: solid rgba(139, 114, 190) 2px;
   color: rgb(139, 114, 190);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 78%,
+    rgba(139, 114, 190, 0.69) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 78%,
+    rgba(139, 114, 190, 0.69) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 78%,
+    rgba(139, 114, 190, 0.69) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#8b72be",GradientType=1);
 }
-#gasNoble i  {
+#gasNoble i {
   color: rgb(139, 114, 190);
 }
 #metalAlcalino {
@@ -261,12 +277,28 @@ nav ul li a{
   border: solid rgba(246, 178, 131) 2px;
   color: rgba(246, 178, 131);
 }
-#metalAlcalinoterreo i{
+#metalAlcalinoterreo i {
   color: rgba(246, 178, 131);
 }
 #metalTransicion {
   border: solid rgba(253, 203, 142) 2px;
   color: rgba(253, 203, 142);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 78%,
+    rgba(253, 203, 142, 0.6867997198879552) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 78%,
+    rgba(253, 203, 142, 0.6867997198879552) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 78%,
+    rgba(253, 203, 142, 0.6867997198879552) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#fdcb8e",GradientType=1);
 }
 #metalTransicion i {
   color: rgba(253, 203, 142);
@@ -275,54 +307,54 @@ nav ul li a{
   border: solid rgba(176, 211, 155) 2px;
   color: rgba(176, 211, 155);
 }
-#metaloide i{
+#metaloide i {
   color: rgba(176, 211, 155);
 }
 #noMetal {
   border: solid rgba(138, 204, 202) 2px;
   color: rgba(138, 204, 202);
 }
-#noMetal i{
+#noMetal i {
   color: rgba(138, 204, 202);
 }
 #halogeno {
   border: solid rgba(132, 208, 244) 2px;
   color: rgba(132, 208, 244);
 }
-#halogeno i{
+#halogeno i {
   color: rgba(132, 208, 244);
 }
 #metalPesado {
   border: solid rgba(255, 246, 155) 2px;
   color: rgba(255, 246, 155);
 }
-#metalPesado i{
+#metalPesado i {
   color: rgba(255, 246, 155);
 }
 #lanthanoids {
   border: solid rgba(199, 147, 195) 2px;
   color: rgba(199, 147, 195);
 }
-#lanthanoids i{
+#lanthanoids i {
   color: rgba(199, 147, 195);
 }
 #actinoids {
   border: solid rgba(243, 156, 162) 2px;
   color: rgba(243, 156, 162);
 }
-#actinoids i{
+#actinoids i {
   color: rgba(243, 156, 162);
 }
 #superpesado {
   border: solid rgba(191, 191, 191) 2px;
   color: rgba(191, 191, 191);
 }
-#superpesado i{
+#superpesado i {
   color: rgba(191, 191, 191);
 }
 
 #art2 {
-  background-color: var(--colorarts1);  
+  background-color: var(--colorarts1);
   color: white;
   border: solid black 2px;
   height: 200px;
