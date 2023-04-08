@@ -1,4 +1,107 @@
-td
-{
-    border: solid black 1px;
+* {
+  font-family: "Orbitron", sans-serif;
+  box-sizing: border-box;
+  font-weight: 600;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+.bk {
+  background: rgb(162, 210, 255);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(162, 210, 255, 1) 20%,
+    rgba(196, 180, 255, 1) 40%,
+    rgba(255, 205, 243, 1) 60%,
+    rgba(255, 194, 180, 1) 80%,
+    rgba(225, 247, 213, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(162, 210, 255, 1) 20%,
+    rgba(196, 180, 255, 1) 40%,
+    rgba(255, 205, 243, 1) 60%,
+    rgba(255, 194, 180, 1) 80%,
+    rgba(225, 247, 213, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(162, 210, 255, 1) 20%,
+    rgba(196, 180, 255, 1) 40%,
+    rgba(255, 205, 243, 1) 60%,
+    rgba(255, 194, 180, 1) 80%,
+    rgba(225, 247, 213, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a2d2ff",endColorstr="#e1f7d5",GradientType=1);
+  width: 100vw;
+  height: 100vh;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenido {
+  background-color: rgba(255, 145, 140, 0.6);
+  height: 80vh;
+  width: 80vw;
+  border-radius: 20px;
+}
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-spacing: 0px;
+  padding: 2px;
+}
+table td,
+table th {
+  text-align: left;
+  padding: 10px;
+  border-bottom: solid black 1px;
+}
+th,
+td {
+  border-left: dotted rgba(0, 0, 0, 0.1) 0.05px;
+}
+table th:nth-child(5),
+tr td:nth-child(5) {
+  border-right: dashed rgba(0, 0, 0, 0.1) 0.05px;
+}
+i {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.lugar1 td i:nth-child(1n) {
+  color: #fff600;
+}
+.lugar1 td i:nth-child(1n+6) 
+{
+  color: white
+}
+.lugar2 td i:nth-child(1n) {
+  color: #fff600;
+}
+.lugar2 td i:nth-child(1n+5) 
+{
+  color: white
+}
+.lugar3 td i:nth-child(1n) {
+  color: #fff600;
+}
+.lugar3 td i:nth-child(1n+3) 
+{
+  color: white
+}
+
+table tr:nth-child(2n)
+{
+  background-color: rgba(255, 115, 110,0.3);
+}
+
