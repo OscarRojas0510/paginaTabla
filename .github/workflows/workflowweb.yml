@@ -34,3 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      #Prueba de checador html
+      - name: Check HTML
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: "../"
+          # The directory to scan
+          arguments: --allow-missing-href
+          # The arguments to pass to HTMLProofer
