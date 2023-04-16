@@ -8,6 +8,7 @@ for(i = 0; i<container.length;i++)
     console.log('th numero '+i+' = '+container[i].outerText);
 }
 */
+const num1 = 30;
 let verMas = document.querySelectorAll("a");
 console.log(verMas);
 for (let i = 0; i < verMas.length; i++) {
@@ -45,11 +46,3 @@ for (let i = 0; i < verMas.length; i++) {
     }
   });
 }
-
-var n = 20;
-if (true) {
-    var n = "asd";
-    alert(n);
-}
-alert(n);
-
