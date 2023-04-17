@@ -35,18 +35,8 @@ jobs:
           # The directory to scan
           arguments: --allow-missing-href
           # The arguments to pass to HTMLProofer
-      - name: merge
-        uses: everlytic/branch-merge@1.1.2
-        with:
-          github_token: ${{ github.TOKEN }}
-          source_ref: ${{ github.ref }}
-          target_branch: 'main'
-          commit_message_template: '[Automated] Merged {source_ref} into target {target_branch}'
-  merge-branch:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: everlytic/branch-merge@1.1.2
+      - name: Branch Merge
+        uses: everlytic/branch-merge@1.1.5
         with:
           github_token: ${{ github.TOKEN }}
           source_ref: ${{ github.ref }}
