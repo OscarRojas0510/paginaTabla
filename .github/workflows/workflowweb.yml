@@ -35,3 +35,6 @@ jobs:
           # The directory to scan
           arguments: --allow-missing-href
           # The arguments to pass to HTMLProofer
+      - name: Get branch name
+        run: /
+          echo "Branch name-> ${GITHUB_REF#refs/heads/}"
