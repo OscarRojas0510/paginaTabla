@@ -42,3 +42,7 @@ jobs:
           source_ref: ${{ github.ref }}
           target_branch: 'main'
           commit_message_template: '[Automated] Merged {source_ref} into target {target_branch}'
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ../../
